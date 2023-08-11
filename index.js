@@ -44,7 +44,9 @@ app.use(require('./routes/post'))
 app.use(require('./routes/user'))
 
 
-
+app.get('/',(req,res)=>{
+  res.send("Hello users")
+})
 
 app.listen(PORT,()=>{
     console.log("server is running on port 5000", PORT);
