@@ -31,7 +31,7 @@ mongoose.connection.on('err',()=>{
 
 require('./models/user')
 require('./models/post')
-// require('./models/like')
+
 
 app.use(express.json())
 app.use(express.urlencoded({

@@ -17,22 +17,6 @@ cloudinary.config({
   secure: true
 });
 
-router.get('/protected',requireLogin,(req,res)=>{
-  res.send("Hello User")
-})
-router.get("/", requireLogin, (req, res) => {
-  res.send("hello");
-});
-
-// router.get('/signup', (req,res)=>{
-//   res.send({
-//     name: 'Hello',
-//     email: {},
-//     password: {}
-//   })
-// })
-
-
 
 router.post("/signup", async (req, res) => {
   
