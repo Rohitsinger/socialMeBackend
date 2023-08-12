@@ -38,7 +38,7 @@ app.use(express.urlencoded({
     extended:false
 }))
 app.use(cors({
-    origin:["https://client-six-flax.vercel.app"],
+    origin:["https://client-six-flax.vercel.app/"],
     methods:["POST","GET","PUT","PATCH","DELETE"],
     credentials:true
 }))
