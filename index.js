@@ -35,7 +35,8 @@ require('./models/post')
 
 app.use(express.json())
 app.use(express.urlencoded({
-    extended:false
+    extended:false,
+    methods:["POST","GET","PUT","PATCH","DELETE"]
 }))
 app.use(cors({
     origin:["https://client-six-flax.vercel.app/"],
@@ -49,6 +50,7 @@ app.use(require('./routes/user'))
 
 
 app.get('/',(req,res)=>{
+    
   res.send("Hello users")
 })
 
